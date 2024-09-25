@@ -12,12 +12,12 @@ connectDB()
   app.on( "error", (error)=>{
     console.log("error: ", error);
     throw error
-  }))
+  })
   
   app.listen(port, ()=>{
     console.log(`connection established on port: ${port}`)
   })
-
+)
 .catch((err)=>{
   console.error("MONGO db connection error !!!", err)
 })
